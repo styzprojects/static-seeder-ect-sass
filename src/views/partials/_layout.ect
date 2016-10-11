@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="description" content="description">
+    <meta name="keywords" content="keywords">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimal-ui, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!--css-->
+    <link rel="stylesheet" href="/static/css/main.css">
+    <% content 'css' : %>
+    <!--/css-->
+
+</head>
+<body>
+<!--header-->
+<% include 'partials/_header' %>
+<!--/header-->
+
+<!--content-->
+<% content 'main' : %>
+<!--/content-->
+
+<!--footer-->
+<% include 'partials/_footer' %>
+<!--/footer-->
+
+<!--script-->
+<script src="/static/js/vendors/jquery-1.11.3.js"></script>
+<script src="/static/js/script.js"></script>
+<% content 'script' : %>
+<!--/script-->
+</body>
+</html>
